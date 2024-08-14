@@ -1,24 +1,19 @@
-import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { motion, Variants } from "framer-motion";
+import { menuItems } from "@/constants/menuItem";
+import { formatName } from "@/utils/formatName";
+import { useActiveSectionStore } from "@/stores/activeSectionStore";
 
-// Define the type for menu items
-interface MenuItem {
-    name: string;
-    href: string;
-}
 
-// Define the menu items with type
-const menuItems: MenuItem[] = [
-    { name: "HOME", href: "#home" },
-    { name: "ABOUT", href: "#about" },
-    { name: "PROJECTS", href: "#projects" },
-    { name: "SKILLS", href: "#skills" },
-    { name: "CONTACT", href: "#contact" }
-];
+const NavbarMenu = () => {
 
-const NavbarMenu: React.FC = () => {
-    const [currentActiveSection, setCurrentActiveSection] = useState<string | undefined>(undefined);
+    const { currentActiveSection, setCurrentActiveSection } = useActiveSectionStore();
+
+    console.log('menu', currentActiveSection)
+
+    const handleSetActive = (section: string) => {
+      setCurrentActiveSection(section);
+    };
 
     const variants: Variants = {
         hidden: { 
@@ -54,16 +49,16 @@ const NavbarMenu: React.FC = () => {
           className="hidden md:flex gap-10 text-xs font-bold"
         >
             {menuItems.map((item, index) => {
-                const formattedName = item.name.toLowerCase();
+                const formattedName = formatName(item.name)
                 return (
                     <motion.div key={index} variants={variants}>
                         <Link
                             name={formattedName}
                             activeClass="active"
-                            onSetActive={() => setCurrentActiveSection(formattedName)}
+                            onSetActive={() => handleSetActive(formattedName)}
                             spy
                             to={formattedName}
-                            offset={-60}
+                            offset={0}
                             className="relative cursor-pointer"
                         >
                             {item.name}

@@ -9,16 +9,41 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { useTheme } from "@/hooks/useTheme"
 
-export function ModeToggle() {
+const ModeToggle = ()  => {
   
   const { setTheme } = useTheme()
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="link" size="icon" className="text-blue-500">
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+        <Button variant="outline" size="icon" className="rounded-full text-blue-500 focus:outline-none">
+          <Sun 
+            className="
+              h-[1.2rem] 
+              w-[1.2rem] 
+              rotate-0 
+              scale-100 
+              transition-all
+              dark:-rotate-90 
+              dark:scale-0 
+              text-yellow-500
+              focus:outline-none
+              "
+            />
+          <Moon 
+            className="
+              absolute 
+              h-[1.2rem] 
+              w-[1.2rem] 
+              rotate-90 
+              scale-0 
+              transition-all 
+              dark:rotate-0 
+              focus:outline-none
+              dark:scale-100
+              text-gray-400
+            "
+          />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
@@ -36,3 +61,5 @@ export function ModeToggle() {
     </DropdownMenu>
   )
 }
+
+export default ModeToggle

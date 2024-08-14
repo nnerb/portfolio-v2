@@ -7,6 +7,11 @@
   src: url('/src/fonts/Century\ Gothic.ttf');
 }
 
+@font-face {
+  font-family: 'MyCustomFontBold' ;
+  src: url('/src/fonts/GOTHICB.TTF');
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

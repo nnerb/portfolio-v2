@@ -3,21 +3,29 @@ import { Menu, } from "lucide-react"
 import Sidebar from "./sidebar"
 import { Button } from "@/components/ui/button"
 
-export const MobileSidebar = () => {
+const MobileSidebar = () => {
+
   return (
       <Sheet>
-        <SheetTrigger className="md:hidden hover:opacity-75 transition">
+        <SheetTrigger className="md:hidden hover:opacity-75 transition" asChild>
           <Button variant="outline" size="icon" className="outline-blue-500 outline outline-1" >
             <Menu className="text-blue-500" />
           </Button>
         </SheetTrigger>
-        <SheetContent side="right" className="p-0">
+        <SheetContent side="right" className="p-8 bg-slate-100 dark:bg-slate-950 ">
           <SheetHeader>
           <SheetTitle hidden></SheetTitle>
           <SheetDescription hidden></SheetDescription>
           </SheetHeader>
-          <Sidebar />   
+          <div className="flex flex-col gap-10">
+            <div className="w-full">
+              <img src='/src/assets/images/logo.png' className="h-12 w-12 mx-auto"/>
+            </div>
+            <Sidebar />  
+          </div>
         </SheetContent>
       </Sheet>
   )
 }
+
+export default MobileSidebar;

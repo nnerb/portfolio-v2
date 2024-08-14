@@ -72,7 +72,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        custom: ['MyCustomFont', 'century-gothic']
+        custom: ['MyCustomFont', 'century-gothic'],
+        customBold: ['MyCustomFontBold', 'century-gothic-bold']
       }
     },
   },
