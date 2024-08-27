@@ -1,0 +1,21 @@
+.a-socials:hover > *{ 
+  transform: rotateY(360deg);
+}
+
+.a-socials::before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0F172A;
+  transition: .5s;
+  transform: translateY(-100%);
+  z-index: 2;
+}
+.a-socials:hover::before {
+  top: 0;
+}
+
+

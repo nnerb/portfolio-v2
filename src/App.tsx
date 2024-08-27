@@ -2,6 +2,7 @@ import Container from "./components/container"
 import Home from "./components/home/home"
 import Navbar from "./components/navbar/navbar"
 import { ThemeProvider } from "@/components/theme-provider"
+import Socials from "./components/socials/socials"
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Container>
           <Home />
         </Container> 
+        <Socials />
       </div>
     </ThemeProvider>
   )
