@@ -1,8 +1,9 @@
 import { Link } from "react-scroll"
-import { motion, Variants } from "framer-motion"
+import { motion } from "framer-motion"
 import { menuItems } from "@/constants/menuItem"
 import { formatName } from "@/utils/formatName"
 import { useActiveSectionStore } from "@/stores/activeSectionStore"
+import { containerVariants, variants } from "../animations"
 
 const NavbarMenu = () => {
   const { currentActiveSection, setCurrentActiveSection } = useActiveSectionStore()
@@ -11,32 +12,6 @@ const NavbarMenu = () => {
 
   const handleSetActive = (section: string) => {
     setCurrentActiveSection(section)
-  }
-
-  const variants: Variants = {
-    hidden: {
-      y: -50,
-      opacity: 0,
-    },
-    show: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: 'ease',
-        duration: 1.25,
-      },
-    },
-  }
-
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.5,
-      },
-    },
   }
 
   return (

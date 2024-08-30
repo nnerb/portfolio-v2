@@ -1,6 +1,7 @@
 import Particle from "@/particles";
 import { motion } from "framer-motion"
 import { Button } from "../ui/button";
+import { containerVariants, itemVariants } from "./animations";
 
 const Home = () => {
 
@@ -16,35 +17,12 @@ const Home = () => {
     })
 }
 
-  const homeContainer = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        delayChildren: 1,
-        staggerChildren: 0.2,
-      }
-    }
-  }
-  
-  const homeItem = {
-    hidden: { x:-100, opacity: 0 },
-    show: {
-       x:0,
-       opacity: 1, 
-       transition: {
-          duration: 1,
-          type: "ease"
-      }
-    }
-  }
-
   return ( 
   <section className="w-full h-full" id="home">
     <Particle />
     <div className="relative grid min-h-screen">
       <motion.div 
-        variants={homeContainer} 
+        variants={containerVariants} 
         initial="hidden" 
         whileInView="show" 
         viewport={{once: true}} 
@@ -55,7 +33,7 @@ const Home = () => {
             Hi, I am
           </h1>
         </div>
-        <motion.div variants={homeItem}>
+        <motion.div variants={itemVariants}>
           <h2
             className="
               font-customBold 
@@ -69,7 +47,7 @@ const Home = () => {
             Brenn Aldwin Santiago.
           </h2>
         </motion.div>
-        <motion.div variants={homeItem}>
+        <motion.div variants={itemVariants}>
           <h3 
             className="
               font-customBold 
@@ -82,13 +60,13 @@ const Home = () => {
             Let's design your success.
           </h3>
         </motion.div>
-        <motion.div variants={homeItem} className="mt-4">
+        <motion.div variants={itemVariants} className="mt-4">
           <p className="transition-all">
             A <span className="text-blue-500 font-semibold">Computer Science</span> graduate who aspires to become a 
             <span className="text-blue-500 font-semibold"> ReactJS Developer</span>.
           </p>
         </motion.div>
-        <motion.div variants={homeItem} className="mt-5">
+        <motion.div variants={itemVariants} className="mt-5">
           <Button 
             onClick={onButtonClick} 
             className="font-bold"

@@ -1,53 +1,9 @@
 import { socialItems } from "@/constants/socialItems"
 import './socials.css'
 import { FaChevronDown } from "react-icons/fa6";
-import { motion, Variants } from "framer-motion"
+import { motion,  } from "framer-motion"
 import { useState } from "react";
-
-const variants: Variants = {
-  initial: {
-    x: 100,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      delay: 0.5,
-      duration: 2,
-      type: 'ease'
-    }
-  }
-}
-
-const containerVariants: Variants= {
-  hidden: {
-    display: "none",
-    transition: {
-      delay: 0.5,
-      staggerChildren: 0.08,
-    }
-  },
-  show: {
-    display: "flex",
-    transition: {
-      staggerChildren: 0.08,
-    }
-  }
-}
-
-const itemVariants: Variants = {  
-  hidden: { scale: 0, y: 50 },
-  show: {
-    scale: 1,
-    y: 0, 
-    transition: { 
-      type: "spring",
-      stiffness: 260,
-      damping: 20
-    }
-  }
-}
+import { containerVariants, itemVariants, variants } from "./animations";
 
 const Socials = () => {
 
