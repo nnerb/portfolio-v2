@@ -29,7 +29,6 @@ const Socials = () => {
           <motion.div 
             key={index} 
             variants={itemVariants} 
-            
           >
             <a 
               href={item.link}  

@@ -1,5 +1,5 @@
 import { Link } from "react-scroll"
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import { menuItems } from "@/constants/menuItem"
 import { formatName } from "@/utils/formatName"
 import { useActiveSectionStore } from "@/stores/activeSectionStore"
@@ -13,6 +13,14 @@ const NavbarMenu = () => {
   const handleSetActive = (section: string) => {
     setCurrentActiveSection(section)
   }
+
+  const { scrollYProgress } = useScroll()
+
+  const navbarStyles = {
+    background: useTransform(scrollYProgress, [0,0.1], ['none', `${'bg-slate-100 dark:bg-slate-950'}`]),
+    boxShadow: useTransform(scrollYProgress, [0,0.1], ['none', '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)']),
+    // backdropFilter: useTransform(scrollYProgress, [0,0.1], ['none', 'blur(10px)'])
+} 
 
   return (
     <motion.div
@@ -31,12 +39,15 @@ const NavbarMenu = () => {
               onSetActive={() => handleSetActive(formattedName)}
               spy
               to={formattedName}
-              offset={0}
-              className="relative cursor-pointer"
+              offset={-60}
+              className="relative cursor-pointer duration-500"
             >
               {item.name}
               {formattedName === currentActiveSection && (
-                <motion.div className="absolute w-full h-[1.5px] rounded-sm bg-blue-500" />
+                <motion.div 
+                  layout 
+                  className="absolute w-full h-[1.5px] rounded-lg bg-blue-500" 
+                />
               )}
             </Link>
           </motion.div>

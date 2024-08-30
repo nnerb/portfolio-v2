@@ -8,7 +8,7 @@ const Container: React.FC<ContainerProps> = ({
   children 
 }) => {
   return (
-    <div className="w-full h-full max-w-[1100px] mx-auto px-4">
+    <div className="relative">
       {children}
     </div>
   )

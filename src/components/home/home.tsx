@@ -1,7 +1,8 @@
-import Particle from "@/particles";
+
 import { motion } from "framer-motion"
 import { Button } from "../ui/button";
 import { containerVariants, itemVariants } from "./animations";
+import Particle from "@/particles";
 
 const Home = () => {
 
@@ -18,17 +19,17 @@ const Home = () => {
 }
 
   return ( 
-  <section className="w-full h-full" id="home">
+  <section className="relative block w-full duration-500" id="home">
     <Particle />
-    <div className="relative grid min-h-screen">
+    <div className="relative grid place-items-center min-h-screen">
       <motion.div 
         variants={containerVariants} 
         initial="hidden" 
         whileInView="show" 
-        viewport={{once: true}} 
-        className="flex flex-col justify-center items-start min-h-[650px] w-full"
+        viewport={{ once: true }} 
+        className="max-w-[1100px] mx-auto px-4 flex flex-col justify-center items-start min-h-[650px] w-full"
       >
-        <div className="h1-div mb-4 ml-[4px]">
+        <div className="mb-4 ml-[4px]">
           <h1 className="text-blue-500 transition-all text-[clamp(0.90rem,5vw,1rem)] m-0 p-0">
             Hi, I am
           </h1>

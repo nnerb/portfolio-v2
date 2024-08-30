@@ -3,6 +3,7 @@ import Home from "./components/home/home"
 import Navbar from "./components/navbar/navbar"
 import { ThemeProvider } from "@/components/theme-provider"
 import Socials from "./components/socials/socials"
+import About from "./components/about/about"
 
 
 
@@ -19,11 +20,13 @@ function App() {
           dark:bg-transparent
           text-slate-900
           dark:text-slate-200
+          overflow-hidden
         "
         >
         <Navbar/>
         <Container>
           <Home />
+          <About />
         </Container> 
         <Socials />
       </div>
