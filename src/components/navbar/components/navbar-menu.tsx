@@ -1,5 +1,5 @@
 import { Link } from "react-scroll"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import { menuItems } from "@/constants/menuItem"
 import { formatName } from "@/utils/formatName"
 import { useActiveSectionStore } from "@/stores/activeSectionStore"
@@ -14,13 +14,6 @@ const NavbarMenu = () => {
     setCurrentActiveSection(section)
   }
 
-  const { scrollYProgress } = useScroll()
-
-  const navbarStyles = {
-    background: useTransform(scrollYProgress, [0,0.1], ['none', `${'bg-slate-100 dark:bg-slate-950'}`]),
-    boxShadow: useTransform(scrollYProgress, [0,0.1], ['none', '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)']),
-    // backdropFilter: useTransform(scrollYProgress, [0,0.1], ['none', 'blur(10px)'])
-} 
 
   return (
     <motion.div
@@ -45,13 +38,13 @@ const NavbarMenu = () => {
               {item.name}
               {formattedName === currentActiveSection && (
                 <motion.div 
-                  layout 
+                  layoutId="underline"
                   className="absolute w-full h-[1.5px] rounded-lg bg-blue-500" 
                 />
               )}
             </Link>
           </motion.div>
-        );
+        )
       })}
     </motion.div>
   )
