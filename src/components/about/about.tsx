@@ -50,7 +50,7 @@ const About = () => {
       <div className="flex flex-col align-center justify-center max-w-[900px] mx-auto py-[100px] px-4">
         <h1 
           className="
-            text-[clamp(26px,5vw,32px)] flex items-center gap-8 w-full relative font-customBol whitespace-nowrap 
+            text-[clamp(26px,5vw,32px)] flex items-center gap-8 w-full relative font-gothic-bold whitespace-nowrap 
             after:content-[''] after:block after:relative after:w-[300px] after:h-[1px] after:bg-slate-900 
             dark:after:bg-slate-200 
           "

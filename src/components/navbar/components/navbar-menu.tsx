@@ -33,7 +33,7 @@ const NavbarMenu = () => {
               spy
               to={formattedName}
               offset={-60}
-              className="relative cursor-pointer duration-500"
+              className="relative cursor-pointer duration-500 hover:text-blue-500"
             >
               {item.name}
               {formattedName === currentActiveSection && (

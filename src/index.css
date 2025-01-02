@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "Gothic-Regular";
-  src: local("Gothic-Regular"), url("/src/fonts/Century\ Gothic.ttf");
+  src: local("Gothic-Regular"), url("/src/fonts/Century\ Gothic.ttf") format('truetype');
 }
 
 @font-face {
   font-family: "Gothic-Bold";
-  src: local("Gothic-Bold"), url("/src/fonts/GOTHICB.TTF");
+  src: local("Gothic-Bold"), url("/src/fonts/GOTHICB.TTF") format('truetype');
 }
 
 @layer base {
@@ -80,4 +80,9 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.active {
+  color: #3B82F6;
+
 }
