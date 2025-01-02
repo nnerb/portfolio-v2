@@ -15,7 +15,7 @@ function App() {
           relative 
           w-full 
           h-full 
-          font-custom 
+          font-gothic-regular 
           bg-slate-100 
           dark:bg-transparent
           text-slate-900

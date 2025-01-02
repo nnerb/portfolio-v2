@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'MyCustomFont' ;
-  src: url('/src/fonts/Century\ Gothic.ttf');
+  font-family: "Gothic-Regular";
+  src: local("Gothic-Regular"), url("/src/fonts/Century\ Gothic.ttf");
 }
 
 @font-face {
-  font-family: 'MyCustomFontBold' ;
-  src: url('/src/fonts/GOTHICB.TTF');
+  font-family: "Gothic-Bold";
+  src: local("Gothic-Bold"), url("/src/fonts/GOTHICB.TTF");
 }
 
 @layer base {

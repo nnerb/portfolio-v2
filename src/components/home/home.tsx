@@ -37,7 +37,7 @@ const Home = () => {
         <motion.div variants={itemVariants}>
           <h2
             className="
-              font-customBold 
+              font-gothic-bold 
               dark:text-slate-300 
               transition
               leading-[1.2] 
@@ -51,7 +51,7 @@ const Home = () => {
         <motion.div variants={itemVariants}>
           <h3 
             className="
-              font-customBold 
+              font-gothic-bold 
               dark:text-slate-400 
               transition
               leading-[1.2] 
