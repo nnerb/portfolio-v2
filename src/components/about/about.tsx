@@ -1,6 +1,7 @@
 import LeftHeader from "../left-header";
 import AboutDetails from "./components/about-details";
 import AboutImage from "./components/about-image";
+import Ways from "./components/ways";
 
 const About = () => {
   return ( 
@@ -12,6 +13,7 @@ const About = () => {
             <AboutDetails />
             <AboutImage />
           </div>
+          <Ways />
         </div>
       </div>
     </div>

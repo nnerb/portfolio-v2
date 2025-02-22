@@ -5,7 +5,7 @@ import profile from "@/assets/images/profile.jpg"
 const AboutImage = () => {
   return ( 
     <motion.div 
-      variants={aboutVariant} initial='hiddenImage' whileInView='showImage' viewport={{ once:true }} 
+      variants={aboutVariant} initial='hiddenImage' whileInView='showImage' viewport={{ once: true }} 
       className='wrapper-container group relative max-w-[300px] justify-self-center'
     >
       <div className='wrapper group-hover:after:top-[10px] group-hover:after:left-[10px] 
@@ -18,7 +18,7 @@ const AboutImage = () => {
         </div>
       </div>
     </motion.div>
-   );
+  );
 }
  
 export default AboutImage;

@@ -30,7 +30,7 @@ const Home = () => {
         className="max-w-[1100px] mx-auto px-4 flex flex-col justify-center items-start min-h-[650px] w-full"
       >
         <div className="mb-4 ml-[4px]">
-          <h1 className="text-blue-500 transition text-[clamp(0.90rem,5vw,1rem)] m-0 p-0">
+          <h1 className="text-blue-500 text-[clamp(0.90rem,5vw,1rem)] m-0 p-0">
             Hi, I am
           </h1>
         </div>
@@ -39,7 +39,6 @@ const Home = () => {
             className="
               font-gothic-bold 
               dark:text-slate-300 
-              transition
               leading-[1.2] 
               text-[clamp(30px,8vw,70px)] 
               m-0
@@ -53,7 +52,6 @@ const Home = () => {
             className="
               font-gothic-bold 
               dark:text-slate-400 
-              transition
               leading-[1.2] 
               text-[clamp(30px,8vw,70px)] 
               m-0"
@@ -62,7 +60,7 @@ const Home = () => {
           </h3>
         </motion.div>
         <motion.div variants={itemVariants} className="mt-4">
-          <p className="transition">
+          <p className="">
             A <span className="text-blue-500 font-semibold">Computer Science</span> graduate who aspires to become a 
             <span className="text-blue-500 font-semibold"> ReactJS Developer</span>.
           </p>

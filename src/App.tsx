@@ -7,7 +7,7 @@ import About from "./components/about/about"
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <div 
         className="relative w-full h-full font-gothic-regular bg-slate-100 
         dark:bg-transparent text-slate-900 dark:text-slate-200 overflow-hidden

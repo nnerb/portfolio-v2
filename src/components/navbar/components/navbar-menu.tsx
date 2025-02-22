@@ -8,13 +8,10 @@ import { containerVariants, variants } from "../animations"
 const NavbarMenu = () => {
   const { currentActiveSection, setCurrentActiveSection } = useActiveSectionStore()
 
-  console.log('menu', currentActiveSection)
-
   const handleSetActive = (section: string) => {
     setCurrentActiveSection(section)
   }
-
-
+  
   return (
     <motion.div
       variants={containerVariants}
