@@ -61,8 +61,8 @@ const Home = () => {
         </motion.div>
         <motion.div variants={itemVariants} className="mt-4">
           <p className="">
-            A <span className="text-blue-500 font-semibold">Computer Science</span> graduate who aspires to become a 
-            <span className="text-blue-500 font-semibold"> ReactJS Developer</span>.
+            A <span className="text-blue-500 font-semibold">Software Developer</span> specializing in React.js and 
+            <span className="text-blue-500 font-semibold"> Modern Web Development</span>.
           </p>
         </motion.div>
         <motion.div variants={itemVariants} className="mt-5">

@@ -5,7 +5,7 @@ const Ways = () => {
   return ( 
     <div className="grid place-items-center gap-10">
       <Header title="Ways that I can help" />
-      <WaysGrid/>
+      <WaysGrid />
     </div>
    );
 }
