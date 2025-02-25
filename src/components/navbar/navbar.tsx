@@ -3,6 +3,7 @@ import MobileSidebar from "./components/mobile-sidebar";
 import ModeToggle from "./components/mode-toggle";
 import NavbarMenu from "./components/navbar-menu";
 import { useEffect, useState } from "react";
+import logo from "@/assets/images/logo.png"
 
 const Navbar = () => {
 
@@ -34,7 +35,7 @@ const Navbar = () => {
     <div className={`w-full z-50 fixed py-4 top-0 ${background}`} style={{ boxShadow }}>
       <div className="w-full flex justify-between mx-auto items-center max-w-[1100px] px-4">
         <div>
-          <img src='/src/assets/images/logo.png' className="h-8 w-8"/>
+          <img src={logo} className="h-8 w-8"/>
         </div>
         <NavbarMenu />
         <div className="flex items-center justify-center gap-4"> 

@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Gothic-Regular";
-  src: local("Gothic-Regular"), url("/src/fonts/Century\ Gothic.ttf") format('truetype');
+  src: local("Gothic-Regular"), url("/src/fonts/centurygothic.ttf") format('truetype');
 }
 
 @font-face {
