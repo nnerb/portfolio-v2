@@ -43,7 +43,7 @@ const Socials = () => {
               <item.name 
                 className="
                   text-[1.5rem] relative z-[3] transition-all
-                dark:group-hover:text-slate-200 duration-500 dark:text-slate-900
+                dark:group-hover:text-slate-200 duration-300 dark:text-slate-900
                 "
               />
             </a>

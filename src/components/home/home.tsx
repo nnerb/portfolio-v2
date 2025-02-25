@@ -19,7 +19,7 @@ const Home = () => {
 }
 
   return ( 
-  <section className="relative block w-full duration-500" id="home">
+  <section className="relative block w-full duration-300" id="home">
     <Particle />
     <div className="relative grid place-items-center min-h-screen">
       <motion.div 

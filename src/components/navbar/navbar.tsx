@@ -31,7 +31,7 @@ const Navbar = () => {
     };
   }, [backgroundTransform, boxShadowTransform]);
   return ( 
-    <div className={`w-full z-50 fixed py-4 top-0 transition-all ${background}`} style={{ boxShadow }}>
+    <div className={`w-full z-50 fixed py-4 top-0  ${background}`} style={{ boxShadow }}>
       <div className="w-full flex justify-between mx-auto items-center max-w-[1100px] px-4">
         <div>
           <img src='/src/assets/images/logo.png' className="h-8 w-8"/>
