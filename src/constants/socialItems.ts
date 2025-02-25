@@ -1,6 +1,6 @@
 
 import { IconType } from "react-icons"
-import { FaEnvelope, FaFacebookF, FaGitAlt, FaLinkedinIn } from "react-icons/fa6"
+import { FaEnvelope, FaGitAlt, FaLinkedinIn } from "react-icons/fa6"
 
 export interface SocialItemsProps {
   name: IconType
@@ -24,9 +24,9 @@ export const socialItems: SocialItemsProps[] = [
     link: "https://www.linkedin.com/in/brenn-aldwin-santiago-b16011236/",
     color: "#0A66C2"
   },
-  {
-    name: FaFacebookF,
-    link: "https://www.facebook.com/brenn.santiago/",
-    color: "#3b5999"
-  }
+  // {
+  //   name: FaFacebookF,
+  //   link: "https://www.facebook.com/brenn.santiago/",
+  //   color: "#3b5999"
+  // }
 ]

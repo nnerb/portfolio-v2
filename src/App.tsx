@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/navbar"
 import { ThemeProvider } from "@/components/theme-provider"
 import Socials from "./components/socials/socials"
 import About from "./components/about/about"
+import Experience from "./components/experience/experience"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Home />
             <About />
           </div>
+          <Experience />
         </Container> 
         <Socials />
       </div>

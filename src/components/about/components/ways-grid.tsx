@@ -1,6 +1,7 @@
 import { waysData } from "@/data/ways-data";
 import { motion } from "framer-motion"
 import { containerVariants, variants } from "../ways-animations";
+import { Card } from "@/components/ui/card";
 
 const WaysGrid = () => {
   return ( 
@@ -13,19 +14,17 @@ const WaysGrid = () => {
     >
       {waysData.map((data, index) => (
         <motion.div 
+          key={index}
           className={`
-            flex flex-col group ease-in rounded-3xl
+            flex flex-col group
             ${index === waysData.length - 1 && 'md:col-span-2 md:mx-auto lg:col-auto lg:mx-0'}
           `}
-          key={index}
           variants={variants}
-          whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)" }}
+          whileHover={{ scale: 1.05 }}
         > 
-          <div 
-            className="
-              py-7 px-5 flex flex-col items-center 
-              max-w-[320px] h-full transition-all
-              bg-white dark:bg-slate-900/10 rounded-3xl"
+          <Card 
+            className="bg-slate-100 dark:bg-slate-900 shadow-md px-4 py-6
+            hover:shadow-lg rounded-lg h-full flex flex-col items-center"
           >
             <span className="text-[3rem] group-hover:text-blue-500 transition">    
               {<data.icon />}
@@ -40,7 +39,7 @@ const WaysGrid = () => {
             </div>
             
             <p className="text-center pt-5 text-sm">{data.caption}</p>
-          </div>
+          </Card>
         </motion.div>
       ))}
     </motion.div>

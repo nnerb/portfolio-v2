@@ -29,7 +29,7 @@ const NavbarMenu = () => {
               onSetActive={() => handleSetActive(formattedName)}
               spy
               to={formattedName}
-              offset={-60}
+              offset={-72}
               className="relative cursor-pointer duration-300 hover:text-blue-500"
             >
               {item.name}

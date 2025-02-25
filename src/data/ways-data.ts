@@ -16,13 +16,13 @@ export const waysData: WaysDataProps[] = [
     'caption': 'Building scalable web applications with both frontend and backend technologies, ensuring seamless user experience and performance.'
   },
   {
-    'title': 'API Development',
-    'icon': AiOutlineCloudServer,
-    'caption': 'Creating and integrating RESTful APIs to connect frontend interfaces with powerful backend services.'
-  },
-  {
     'title': 'User-Centered Design',
     'icon': MdOutlineDesignServices,
     'caption': 'Designing intuitive and responsive interfaces while ensuring accessibility and performance on all devices.'
-  }
+  },
+  {
+    'title': 'API Development & Integration',
+    'icon': AiOutlineCloudServer,
+    'caption': 'Creating and integrating RESTful APIs to connect frontend interfaces with powerful backend services.'
+  },
 ];

@@ -85,3 +85,14 @@ html {
 .active {
   color: #3B82F6;
 }
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
