@@ -15,8 +15,10 @@ function App() {
         >
         <Navbar/>
         <Container>
-          <Home />
-          <About />
+          <div id="about">
+            <Home />
+            <About />
+          </div>
         </Container> 
         <Socials />
       </div>

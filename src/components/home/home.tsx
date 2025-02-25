@@ -19,7 +19,7 @@ const Home = () => {
 }
 
   return ( 
-  <section className="relative block w-full duration-300" id="home">
+  <section className="relative block w-full duration-300">
     <Particle />
     <div className="relative grid place-items-center min-h-screen">
       <motion.div 
@@ -61,7 +61,7 @@ const Home = () => {
         </motion.div>
         <motion.div variants={itemVariants} className="mt-4">
           <p className="">
-            A <span className="text-blue-500 font-semibold">Software Developer</span> specializing in React.js and 
+            A <span className="text-blue-500 font-semibold">Software Developer</span> specializing in <span className="text-blue-500 font-semibold">React.js</span> and 
             <span className="text-blue-500 font-semibold"> Modern Web Development</span>.
           </p>
         </motion.div>

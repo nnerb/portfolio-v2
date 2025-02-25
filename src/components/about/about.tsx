@@ -5,8 +5,8 @@ import Mission from "./components/mission";
 import Ways from "./components/ways";
 
 const About = () => {
-  return ( 
-    <section className="relative bg-slate-50 dark:bg-slate-950" id="about">
+  return (  
+    <section className="relative bg-slate-50 dark:bg-slate-950">
       <div className="flex flex-col align-center justify-center max-w-[900px] mx-auto py-[100px] px-4">
         <LeftHeader title="About Me"/>
         <div className="pt-8 relative flex justify-center items-center flex-col gap-[7rem]">

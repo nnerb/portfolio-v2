@@ -11,7 +11,7 @@ const Navbar = () => {
   const backgroundTransform = useTransform(
     scrollYProgress,
     [0, 0.1],
-    ["bg-transparent", "bg-slate-100 dark:bg-slate-950"]
+    ["", "bg-slate-100 dark:bg-slate-950"]
   );
   const boxShadowTransform = useTransform(
     scrollYProgress,
@@ -31,7 +31,7 @@ const Navbar = () => {
     };
   }, [backgroundTransform, boxShadowTransform]);
   return ( 
-    <div className={`w-full z-50 fixed py-4 top-0  ${background}`} style={{ boxShadow }}>
+    <div className={`w-full z-50 fixed py-4 top-0 ${background}`} style={{ boxShadow }}>
       <div className="w-full flex justify-between mx-auto items-center max-w-[1100px] px-4">
         <div>
           <img src='/src/assets/images/logo.png' className="h-8 w-8"/>
