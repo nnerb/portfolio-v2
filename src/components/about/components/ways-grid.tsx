@@ -38,7 +38,7 @@ const WaysGrid = () => {
               </h1>
             </div>
             
-            <p className="text-center pt-5 text-sm">{data.caption}</p>
+            <p className="text-center pt-5 text-sm text-slate-700 dark:text-slate-400">{data.caption}</p>
           </Card>
         </motion.div>
       ))}
