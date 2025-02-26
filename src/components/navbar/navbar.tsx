@@ -31,11 +31,11 @@ const Navbar = () => {
       unsubscribeBoxShadow();
     };
   }, [backgroundTransform, boxShadowTransform]);
-  return ( 
-    <div className={`w-full z-50 fixed py-4 top-0 ${background}`} style={{ boxShadow }}>
+  return (
+    <div className={`w-full z-50 fixed py-4 top-0 ${background}`} style={{ boxShadow }} >
       <div className="w-full flex justify-between mx-auto items-center max-w-[1100px] px-4">
         <div>
-          <img src={logo} className="h-8 w-8"/>
+          <img src={logo} className="h-8 w-8 cursor-pointer" onClick={() => window.location.reload()}/>
         </div>
         <NavbarMenu />
         <div className="flex items-center justify-center gap-4"> 
