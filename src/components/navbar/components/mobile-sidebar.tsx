@@ -2,6 +2,7 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { Menu, } from "lucide-react"
 import Sidebar from "./sidebar"
 import { Button } from "@/components/ui/button"
+import logo from "@/assets/images/logo.png"
 
 const MobileSidebar = () => {
 
@@ -19,7 +20,7 @@ const MobileSidebar = () => {
           </SheetHeader>
           <div className="flex flex-col gap-10">
             <div className="w-full">
-              <img src='/src/assets/images/logo.png' className="h-12 w-12 mx-auto"/>
+              <img src={logo} className="h-12 w-12 mx-auto"/>
             </div>
             <Sidebar />  
           </div>
