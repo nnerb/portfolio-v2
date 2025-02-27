@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Socials from "./components/socials/socials"
 import About from "./components/about/about"
 import Experience from "./components/experience/experience"
+import Projects from "./components/projects/projects"
+import Skills from "./components/skills/skills"
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <About />
           </div>
           <Experience />
+          <Skills />
+          <Projects/>
         </Container> 
         <Socials />
       </div>

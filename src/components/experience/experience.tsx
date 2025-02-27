@@ -62,12 +62,11 @@ const Experience = () => {
             <a key={index} href={exp.url} target="_blank" rel="noopener noreferrer">
               <motion.div
                 variants={variants}
-                whileHover={{ scale: 1.05 }}
                 className="h-full"
               >
                 <Card className="bg-slate-100 dark:bg-slate-900 shadow-lg mt-0! h-full">
                   <CardHeader className="flex-row gap-4">
-                    <div>
+                    <div className="flex-shrink-0">
                       <img src={exp.image} className="h-14 w-14 rounded-full" />
                     </div>
                     <div className="flex flex-col items-start !mt-0">

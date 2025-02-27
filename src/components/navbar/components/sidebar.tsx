@@ -1,4 +1,4 @@
-import { menuItems } from "@/constants/menuItem";
+import { menuItems } from "@/constants/menu-items";
 import { cn } from "@/lib/utils";
 import { useActiveSectionStore } from "@/stores/activeSectionStore";
 import { formatName } from "@/utils/formatName";

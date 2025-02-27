@@ -6,7 +6,7 @@ export interface MenuItem {
 export const menuItems: MenuItem[] = [
   { name: "ABOUT", href: "#about" },
   { name: "EXPERIENCE", href: "#experience" },
-  { name: "PROJECTS", href: "#projects" },
   { name: "SKILLS", href: "#skills" },
-  { name: "CONTACT", href: "#contact" },
+  { name: "PROJECTS", href: "#projects" },
+  { name: "CONTACT", href: "#contact" },  
 ];

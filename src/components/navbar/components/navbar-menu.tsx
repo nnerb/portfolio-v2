@@ -1,6 +1,6 @@
 import { Link } from "react-scroll"
 import { motion } from "framer-motion"
-import { menuItems } from "@/constants/menuItem"
+import { menuItems } from "@/constants/menu-items"
 import { formatName } from "@/utils/formatName"
 import { useActiveSectionStore } from "@/stores/activeSectionStore"
 import { containerVariants, variants } from "../animations"

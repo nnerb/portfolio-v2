@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { aboutVariant, containerVariants, li, ul } from "../animations";
 import { CSSProperties, useEffect, useState } from "react";
 import { FaChevronRight } from "react-icons/fa6";
-import { aboutItems } from "@/constants/aboutItems";
+import { aboutItems } from "@/constants/about-items";
 
 const DURATION = 2000
 

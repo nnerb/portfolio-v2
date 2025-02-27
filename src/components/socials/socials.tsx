@@ -1,4 +1,4 @@
-import { socialItems } from "@/constants/socialItems"
+import { socialItems } from "@/constants/social-items"
 import './socials.css'
 import { FaChevronDown } from "react-icons/fa6";
 import { motion,  } from "framer-motion"
