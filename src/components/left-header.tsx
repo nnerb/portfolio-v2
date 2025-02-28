@@ -7,8 +7,8 @@ const LeftHeader: React.FC<LeftHeaderProps> = ({ title }) => {
     <h1 
       className="
         text-[clamp(26px,5vw,32px)] flex items-center gap-8 w-full relative font-gothic-bold whitespace-nowrap 
-        after:content-[''] after:block after:relative after:w-[300px] after:h-[1px] after:bg-slate-900 
-        dark:after:bg-slate-200 
+        after:content-[''] after:block after:relative after:w-[300px] after:h-[2px] after:bg-slate-900 
+        dark:after:bg-slate-200 z-10 text-blue-500
       "
     >
       {title}

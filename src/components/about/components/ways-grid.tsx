@@ -25,7 +25,7 @@ const WaysGrid = () => {
         > 
           <Card 
             className="bg-slate-100 dark:bg-slate-900 shadow-slate-300
-            dark:shadow-sky-900 shadow-[0px_0px_10px] px-4 py-6
+            dark:shadow-sky-900 shadow-[0px_0px_10px] p-4
              rounded-lg h-full flex flex-col items-center"
           >
             <span className="text-[3rem] group-hover:text-blue-500 transition">    

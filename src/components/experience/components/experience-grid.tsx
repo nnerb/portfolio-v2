@@ -49,13 +49,13 @@ const ExperienceGrid = () => {
                   className="
                     bg-slate-100 dark:bg-slate-900 shadow-slate-300
                     dark:shadow-sky-900 shadow-[0px_0px_15px] mt-0! h-full w-full
+                    p-4 sm:p-6
                   "
                 >
                   <Accordion type="multiple" defaultValue={[experiences[0].company]}>               
-                    <AccordionItem value={exp.company} className="cursor-default">
+                    <AccordionItem value={exp.company} className="cursor-default flex flex-col gap-4">
                       <AccordionTrigger className="w-full">
-                        <CardHeader className="flex-row gap-4 w-full">
-                          
+                        <CardHeader className="flex-row gap-4 w-full p-0">
                           <div className="flex flex-col items-start !mt-0">
                             <CardTitle className="text-lg text-start">{exp.title}</CardTitle>
                             <div className="text-xs text-gray-500 flex flex-col items-start w-full">
@@ -71,11 +71,11 @@ const ExperienceGrid = () => {
                           </div>
                         </CardHeader>
                       </AccordionTrigger>
-                      <AccordionContent>
-                        <CardContent className="text-sm text-slate-700 dark:text-slate-400">
+                      <AccordionContent className="flex flex-col gap-4">
+                        <CardContent className="text-sm text-slate-700 dark:text-slate-400 p-0">
                           {exp.description}
                         </CardContent>
-                        <div className="px-6 pb-6 flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2">
                           {exp.skills.map((skill, index) => (
                             <p className={`${badgeVariants({ variant: "custom" })}`} key={index}>{skill}</p>
                           ))}

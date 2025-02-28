@@ -10,7 +10,7 @@ const About = () => {
       <div className="flex flex-col align-center justify-center max-w-[900px] mx-auto py-[100px] px-4">
         <LeftHeader title="About Me"/>
         <div className="pt-8 relative flex justify-center items-center flex-col gap-[7rem]">
-          <div className="grid md:grid-cols-[2fr,1fr] gap-[50px]">
+          <div className="grid md:grid-cols-[2fr,1fr] gap-[50px] relative">
             <AboutDetails />
             <AboutImage />
           </div>
