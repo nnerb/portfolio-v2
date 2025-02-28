@@ -53,11 +53,12 @@ const MoreInfo = () => {
       viewport={{ once:true }}
       className="flex flex-col gap-2">
       <div 
-        className="flex items-center text-blue-500 font-bold mr-auto cursor-pointer hover:text-blue-800"
+        className="flex items-center text-blue-500 font-bold mr-auto cursor-pointer 
+        hover:text-blue-700 transition-all"
         onClick={toggleInfo} 
         style={styles}
       >
-        <p className=''>More info: </p>
+        <p>More info: </p>
         <motion.li animate={{ rotate: infoStatus ? 90 : 0 }} className="ml-2 list-none">
           <FaChevronRight />
         </motion.li>
