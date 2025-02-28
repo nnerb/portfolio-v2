@@ -2,7 +2,7 @@ import MoreInfo from "./more-info";
 
 const AboutDetails = () => {
   return ( 
-    <div className="flex flex-col gap-4 text-base ">
+    <div className="relative flex flex-col gap-4 text-base before:content-['asd'] before:absolute before:-z-10 before:inset-0 before:bg-sky-900 before:blur-xl before:opacity-50 before:rounded-lg">
       <p className='mb-2'>
         <span className='text-blue-500 font-bold'>Hello! </span>
           My name is 

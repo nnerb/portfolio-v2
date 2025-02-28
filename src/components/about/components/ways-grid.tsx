@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 const WaysGrid = () => {
   return ( 
     <motion.div 
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
@@ -16,15 +16,17 @@ const WaysGrid = () => {
         <motion.div 
           key={index}
           className={`
-            flex flex-col group
+            flex flex-col group max-w-[400px] md:max-w-[300px]
             ${index === waysData.length - 1 && 'md:col-span-2 md:mx-auto lg:col-auto lg:mx-0'}
           `}
           variants={variants}
           whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 1.05 }}
         > 
           <Card 
-            className="bg-slate-100 dark:bg-slate-900 shadow-md px-4 py-6
-            hover:shadow-lg rounded-lg h-full flex flex-col items-center"
+            className="bg-slate-100 dark:bg-slate-900 shadow-slate-300
+            dark:shadow-sky-900 shadow-[0px_0px_10px] px-4 py-6
+             rounded-lg h-full flex flex-col items-center"
           >
             <span className="text-[3rem] group-hover:text-blue-500 transition">    
               {<data.icon />}

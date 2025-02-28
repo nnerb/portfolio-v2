@@ -10,10 +10,10 @@ const Home = () => {
     const fileName = 'Santiago-BrennAldwin-A-Resume.pdf'
     fetch(fileName).then(response => {
         response.blob().then(() => {
-            const alink = document.createElement('a')
-            alink.target = "_blank"
-            alink.href = fileName 
-            alink.click()
+          const alink = document.createElement('a')
+          alink.target = "_blank"
+          alink.href = fileName 
+          alink.click()
         })
     })
 }

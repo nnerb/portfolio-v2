@@ -2,6 +2,7 @@ import { skills } from "@/constants/skills-items";
 import { useSkillStore } from "@/stores/useSkillStore";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { variants } from "../animations";
 
 const SkillsGrid = () => {
 
@@ -14,7 +15,13 @@ const SkillsGrid = () => {
   }, []);
 
   return ( 
-    <section className="grid grid-cols-3 sm:grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-3 w-full">
+    <motion.section 
+      className="grid grid-cols-3 sm:grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-3 w-full"
+      variants={variants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }} 
+    >
       <AnimatePresence>
       {skills.map((skill) =>
         selectedCategory === "ALL" || skill.category === selectedCategory ? (
@@ -30,6 +37,7 @@ const SkillsGrid = () => {
               transition={{ duration: 0.3, type: 'ease' }}
               exit={{ scale: 0 }}
               whileHover={{ y: -3 }}
+              whileTap={{ y: -3 }}
             >
               <img src={skill.logo} alt={`${skill.name} logo`} className="w-12 h-12" />
               <h3 className="mt-2 text-xs text-center dark:group-hover:text-blue-500 group-hover:text-slate-500 transition">{skill.name}</h3>
@@ -37,7 +45,7 @@ const SkillsGrid = () => {
         ) : null
       )}
     </AnimatePresence>
-    </section>
+    </motion.section>
    );
 }
  
