@@ -7,6 +7,8 @@ import About from "./components/about/about"
 import Experience from "./components/experience/experience"
 import Projects from "./components/projects/projects"
 import Skills from "./components/skills/skills"
+import { Route, Routes } from "react-router-dom"
+import Archive from "./components/projects/components/archive"
 
 function App() {
   return (
@@ -16,17 +18,24 @@ function App() {
         dark:bg-transparent text-slate-900 dark:text-slate-200 overflow-hidden
       "
         >
-        <Navbar/>
-        <Container>
-          <div id="about">
-            <Home />
-            <About />
-          </div>
-          <Experience />
-          <Skills />
-          <Projects/>
-        </Container> 
-        <Socials />
+        <Routes>
+          <Route index element={
+            <>
+            <Navbar/>
+            <Container>
+              <div id="about">
+                <Home />
+                <About />
+              </div>
+              <Experience />
+              <Skills />
+              <Projects/>
+            </Container> 
+            <Socials />
+          </>
+          }/>
+          <Route path="archive" element={<Archive />}/>
+        </Routes>
       </div>
     </ThemeProvider>
   )

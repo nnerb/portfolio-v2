@@ -1,16 +1,16 @@
-import { Variants } from "framer-motion";
+import { Variants } from "framer-motion"
 
 export const variants: Variants = {
   hidden: {
+    x: -50,
     opacity: 0,
-    y: 30
   },
   show: {
+    x: 0,
     opacity: 1,
-    y: 0,
     transition: {
+      type: 'ease',
       duration: 1,
-      type: "ease"
-    }
-  }
+    },
+  },
 }
