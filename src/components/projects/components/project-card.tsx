@@ -40,7 +40,7 @@ const ProjectCard = ({ project } : ProjectCardProps ) => {
             {project.name}
           </h3>
         </CardHeader>
-        <CardContent className="flex flex-col gap-2">
+        <CardContent className="flex flex-col gap-2 h-full">
          <p className="text-gray-600 dark:text-gray-400 text-sm">{project.description}</p>
           {/* Tech Stack Badges */}
           <div className="flex flex-wrap gap-[6px] -ml-1 mt-1">
@@ -51,7 +51,7 @@ const ProjectCard = ({ project } : ProjectCardProps ) => {
             ))}
           </div>
           {/* Links with Icons */}
-          <div className="flex justify-between items-center mt-1">
+          <div className="flex justify-between items-center mt-auto">
             {project.url.repo && (
               <a href={project.url.repo} target="_blank" className="flex items-center gap-1 text-blue-600 dark:text-blue-400 text-sm  hover:underline">
                 <FaGithub /> GitHub

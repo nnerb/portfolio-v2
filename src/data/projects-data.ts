@@ -46,13 +46,23 @@ export const projectData: ProjectDataProps[] = [
   },
   { 
     name: 'Dashboard UI', 
-    description: 'A sleek and responsive admin dashboard built with Next.js, Tailwind, and Chart.js. Features include dynamic data visualization, customer and order management sections (static data), and a modern UI designed for seamless user experience.', 
+    description: 'A sleek and responsive admin dashboard built with Next.js, Tailwind, and Chart.js. Features include dynamic data visualization, customer and order management sections, and a modern UI designed.', 
     techStack: [
       'Next.js', 'TypeScript', 'Tailwind', 'Chart.js'
    ],
     url: { repo: 'https://github.com/nnerb/dashboard-nextjs-tailwind', live: 'https://dashboard-nextjs-tailwind.vercel.app/' },
     image: 'images/projects/dashboard.png',
     year: '2023'
+  },
+  { 
+    name: 'An Online Capstone Project Management with Decision Support System (Thesis)', 
+    description: '', 
+    techStack: [
+      'HTML & CSS', 'JavaScript', 'jQuery', 'PHP', 'MySQL', 'MariaDB', 'XAMPP'
+   ],
+    url: { repo: '', live: '' },
+    image: '',
+    year: '2022'
   },
   { 
     name: 'Todo App', 

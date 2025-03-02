@@ -10,6 +10,8 @@ import Skills from "./components/skills/skills"
 import { Route, Routes } from "react-router-dom"
 import Archive from "./components/projects/components/archive"
 import Contact from "./components/contact/contact"
+import { Toaster } from "./components/ui/sonner"
+import Footer from "./components/footer"
 
 function App() {
   return (
@@ -34,11 +36,13 @@ function App() {
               <Contact />
             </Container> 
             <Socials />
+            <Footer />
           </>
           }/>
           <Route path="archive" element={<Archive />}/>
         </Routes>
       </div>
+      <Toaster position="top-right" />
     </ThemeProvider>
   )
 }
