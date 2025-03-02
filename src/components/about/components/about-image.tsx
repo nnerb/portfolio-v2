@@ -1,6 +1,6 @@
 import { aboutVariant } from "../animations";
 import { motion } from "framer-motion"
-import profile from "@/assets/images/profile.jpg"
+import profile from "/images/profile.jpg"
 
 const AboutImage = () => {
   return ( 

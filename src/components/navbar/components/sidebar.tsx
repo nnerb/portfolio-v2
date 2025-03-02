@@ -1,4 +1,4 @@
-import { menuItems } from "@/constants/menu-items";
+import { menuData } from "@/data/menu-data";
 import { cn } from "@/lib/utils";
 import { useActiveSectionStore } from "@/stores/activeSectionStore";
 import { formatName } from "@/utils/formatName";
@@ -14,7 +14,7 @@ import { Link } from "react-scroll";
 
   return ( 
     <div className="flex flex-col justify-center items-center gap-5 mt-5 w-full">
-        {menuItems.map((item, index) => {
+        {menuData.map((item, index) => {
           const formattedName = formatName(item.name)
           return (
             <div 

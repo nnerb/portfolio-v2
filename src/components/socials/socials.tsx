@@ -1,4 +1,4 @@
-import { socialItems } from "@/constants/social-items"
+import { socialData } from "@/data/social-data"
 import './socials.css'
 import { FaChevronDown } from "react-icons/fa6";
 import { motion,  } from "framer-motion"
@@ -25,7 +25,7 @@ const Socials = () => {
         animate={isOpen ? "show" : "hidden"}
         variants={containerVariants}
       >
-        {socialItems.map((item, index) => (
+        {socialData.map((item, index) => (
           <motion.div 
             key={index} 
             variants={itemVariants} 

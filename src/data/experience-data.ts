@@ -1,5 +1,5 @@
-import melham from "@/assets/images/company/melham.jpg"
-import xircus from "@/assets/images/company/xircus.jpg"
+import melham from "/images/company/melham.jpg"
+import xircus from "/images/company/xircus.jpg"
 
 interface ExperiencesProps {
   title: string;

@@ -9,6 +9,7 @@ import Projects from "./components/projects/projects"
 import Skills from "./components/skills/skills"
 import { Route, Routes } from "react-router-dom"
 import Archive from "./components/projects/components/archive"
+import Contact from "./components/contact/contact"
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Experience />
               <Skills />
               <Projects/>
+              <Contact />
             </Container> 
             <Socials />
           </>

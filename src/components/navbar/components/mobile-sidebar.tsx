@@ -2,7 +2,7 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { Menu, } from "lucide-react"
 import Sidebar from "./sidebar"
 import { Button } from "@/components/ui/button"
-import logo from "@/assets/images/logo.png"
+import logo from "/images/logo.png"
 
 const MobileSidebar = () => {
 

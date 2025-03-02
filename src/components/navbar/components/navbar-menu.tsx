@@ -1,6 +1,6 @@
 import { Link } from "react-scroll"
 import { motion } from "framer-motion"
-import { menuItems } from "@/constants/menu-items"
+import { menuData } from "@/data/menu-data"
 import { formatName } from "@/utils/formatName"
 import { useActiveSectionStore } from "@/stores/activeSectionStore"
 import { containerVariants, variants } from "../animations"
@@ -19,7 +19,7 @@ const NavbarMenu = () => {
       animate="show"
       className="hidden md:flex gap-10 text-xs font-bold"
     >
-      {menuItems.map((item, index) => {
+      {menuData.map((item, index) => {
         const formattedName = formatName(item.name);
         return (
           <motion.div key={index} variants={variants}>

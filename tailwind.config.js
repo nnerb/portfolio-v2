@@ -50,7 +50,8 @@ module.exports = {
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
-  			}
+  			},
+				'slate-custom': '#020817',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -103,7 +104,7 @@ module.exports = {
   			],
   			'gothic-bold': [
   				'Gothic-Bold'
-  			]
+  			],
   		}
   	}
   },

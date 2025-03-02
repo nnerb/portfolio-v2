@@ -3,7 +3,7 @@ import MobileSidebar from "./components/mobile-sidebar";
 import ModeToggle from "./components/mode-toggle";
 import NavbarMenu from "./components/navbar-menu";
 import { useEffect, useState } from "react";
-import logo from "@/assets/images/logo.png"
+import logo from "/images/logo.png"
 
 const Navbar = () => {
 

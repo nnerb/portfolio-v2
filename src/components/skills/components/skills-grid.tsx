@@ -1,4 +1,4 @@
-import { skills } from "@/constants/skills-items";
+import { skillsData } from "@/data/skills-data";
 import { useSkillStore } from "@/stores/useSkillStore";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -23,7 +23,7 @@ const SkillsGrid = () => {
       viewport={{ once: true }} 
     >
       <AnimatePresence>
-      {skills.map((skill) =>
+      {skillsData.map((skill) =>
         selectedCategory === "ALL" || skill.category === selectedCategory ? (
             <motion.article 
               key={skill.name}

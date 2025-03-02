@@ -4,7 +4,7 @@ import Header from "@/components/header";
 
 const Mission = () => {
   return ( 
-    <div className='flex justify-center relative bg-slate-100 dark:bg-[#020817]'>
+    <div className='flex justify-center relative bg-slate-100 dark:bg-slate-custom'>
       <motion.div 
         variants={variants} 
         initial='hidden' 

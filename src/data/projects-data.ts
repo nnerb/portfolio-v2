@@ -19,7 +19,7 @@ export const projectData: ProjectDataProps[] = [
       'Node.js + Express.js', 'MongoDB + Mongoose', 'Socket.IO'
    ],
     url: { repo: 'https://github.com/nnerb/chat-app', live: 'https://chat-app-vue8.onrender.com/' },
-    image: '/projects/yapster.png',
+    image: 'images/projects/yapster.png',
     year: '2025'
   },
   { 
@@ -30,7 +30,7 @@ export const projectData: ProjectDataProps[] = [
       'React Hook Form'
    ],
     url: { repo: 'https://github.com/nnerb/abenson_landpage', live: 'https://abenson-assessment.vercel.app/' },
-    image: '/projects/abenson.png',
+    image: 'images/projects/abenson.png',
     year: '2024'
   },
   { 
@@ -41,7 +41,7 @@ export const projectData: ProjectDataProps[] = [
       'Next Auth', 'Prisma'
    ],
     url: { repo: 'https://github.com/nnerb/airbnb_fullstack', live: 'https://booking-app-woad.vercel.app/' },
-    image: '/projects/airbnb.png',
+    image: 'images/projects/airbnb.png',
     year: '2023'
   },
   { 
@@ -51,7 +51,7 @@ export const projectData: ProjectDataProps[] = [
       'Next.js', 'TypeScript', 'Tailwind', 'Chart.js'
    ],
     url: { repo: 'https://github.com/nnerb/dashboard-nextjs-tailwind', live: 'https://dashboard-nextjs-tailwind.vercel.app/' },
-    image: '/projects/dashboard.png',
+    image: 'images/projects/dashboard.png',
     year: '2023'
   },
   { 
@@ -68,9 +68,20 @@ export const projectData: ProjectDataProps[] = [
     name: 'Synonym Finder', 
     description: '', 
     techStack: [
-      'React.js', 'Tailwind, API'
+      'React.js', 'Tailwind', 'API'
    ],
     url: { repo: 'https://github.com/nnerb/todo-app', live: '' },
+    image: '',
+    year: '2022'
+  },
+  { 
+    name: 'Color Guessing Game', 
+    description: '', 
+    techStack: ['React.js', 'TypeScript', 'Tailwind'],
+    url: { 
+      repo: 'https://github.com/nnerb/guessing-game', 
+      live: 'https://guessing-game-iota.vercel.app/' 
+    },
     image: '',
     year: '2022'
   },
@@ -115,7 +126,7 @@ export const projectData: ProjectDataProps[] = [
   { 
     name: 'Ecommerce Admin', 
     description: '', 
-    techStack: ['Next.js', 'Tailwind', 'Prisma', 'MongoDB', 'Clerk', 'Zustand', 'Stripe'],
+    techStack: ['Next.js', 'TypeScript', 'Tailwind', 'Prisma', 'MongoDB', 'Clerk', 'Zustand', 'Stripe'],
     url: { 
       repo: 'https://github.com/nnerb/ecommerce-admin', 
       live: 'https://ecommerce-admin-eight-alpha.vercel.app/' 
@@ -126,7 +137,7 @@ export const projectData: ProjectDataProps[] = [
   { 
     name: 'Ecommerce Store', 
     description: '', 
-    techStack: ['Next.js', 'Tailwind', 'Stripe'],
+    techStack: ['Next.js', 'TypeScript', 'Tailwind', 'Stripe'],
     url: { 
       repo: 'https://github.com/nnerb/ecommerce-store', 
       live: 'https://ecommerce-store-khaki-three.vercel.app/' 

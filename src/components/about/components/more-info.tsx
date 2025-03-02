@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { aboutVariant, containerVariants, li, ul } from "../animations";
 import { CSSProperties, useEffect, useState } from "react";
 import { FaChevronRight } from "react-icons/fa6";
-import { aboutItems } from "@/constants/about-items";
+import { aboutData } from "@/data/about-data";
 
 const DURATION = 2000
 
@@ -39,7 +39,7 @@ const MoreInfo = () => {
   }
 
     
-  const infoItems = aboutItems.map((item, index) => (
+  const infoItems = aboutData.map((item, index) => (
     <motion.li key={index} variants={li} className="font-black list-disc marker:text-blue-500">
       {item.title}
     </motion.li>

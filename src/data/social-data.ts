@@ -2,13 +2,13 @@
 import { IconType } from "react-icons"
 import { FaEnvelope, FaGitAlt, FaLinkedinIn } from "react-icons/fa6"
 
-export interface SocialItemsProps {
+export interface SocialDataProps {
   name: IconType
   link: string
   color: string
 }
 
-export const socialItems: SocialItemsProps[] = [
+export const socialData: SocialDataProps[] = [
   {
     name: FaEnvelope,
     link: "mailto:brennaldwin.santiago@gmail.com",

@@ -1,9 +1,9 @@
-export interface MenuItem {
+export interface MenuDataProps {
   name: string;
   href: string;
 }
 
-export const menuItems: MenuItem[] = [
+export const menuData: MenuDataProps[] = [
   { name: "ABOUT", href: "#about" },
   { name: "EXPERIENCE", href: "#experience" },
   { name: "SKILLS", href: "#skills" },
