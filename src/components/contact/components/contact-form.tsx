@@ -39,11 +39,11 @@ const ContactForm = () => {
 
     try {
       await emailjs.sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID!,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
         formRef.current, 
         {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
         }
       )
       toast.success("Message sent!", {
