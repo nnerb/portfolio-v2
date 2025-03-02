@@ -55,6 +55,16 @@ export const projectData: ProjectDataProps[] = [
     year: '2023'
   },
   { 
+    name: 'LH & Creatives Landing Page', 
+    description: "", 
+    techStack: [
+      'React.js', 'HTML & CSS', 'JavaScript'
+   ],
+    url: { repo: 'https://github.com/nnerb/lh-creatives-landing', live: 'https://lh-creatives-clone.vercel.app/' },
+    image: '',
+    year: '2024'
+  },
+  { 
     name: 'An Online Capstone Project Management with Decision Support System (Thesis)', 
     description: '', 
     techStack: [
@@ -68,7 +78,7 @@ export const projectData: ProjectDataProps[] = [
     name: 'Todo App', 
     description: '', 
     techStack: [
-      'React.js', 'Tailwind'
+      'React.js', 'Tailwind', 'JavaScript'
    ],
     url: { repo: 'https://github.com/nnerb/todo-app', live: 'https://my-todo-app-brenn.vercel.app/' },
     image: '',
@@ -78,7 +88,7 @@ export const projectData: ProjectDataProps[] = [
     name: 'Synonym Finder', 
     description: '', 
     techStack: [
-      'React.js', 'Tailwind', 'API'
+      'React.js', 'Tailwind', 'API', 'JavaScript'
    ],
     url: { repo: 'https://github.com/nnerb/todo-app', live: '' },
     image: '',
@@ -87,7 +97,7 @@ export const projectData: ProjectDataProps[] = [
   { 
     name: 'Color Guessing Game', 
     description: '', 
-    techStack: ['React.js', 'TypeScript', 'Tailwind'],
+    techStack: ['React.js', 'TypeScript', 'Tailwind', 'JavaScript'],
     url: { 
       repo: 'https://github.com/nnerb/guessing-game', 
       live: 'https://guessing-game-iota.vercel.app/' 
@@ -109,7 +119,7 @@ export const projectData: ProjectDataProps[] = [
   { 
     name: 'Airbnb Clone Front-End', 
     description: '', 
-    techStack: ['React.js', 'HTML & CSS'],
+    techStack: ['React.js', 'HTML & CSS', 'JavaScript'],
     url: { repo: 'https://github.com/nnerb/airbnb-clone', live: '' },
     image: '',
     year: '2022'

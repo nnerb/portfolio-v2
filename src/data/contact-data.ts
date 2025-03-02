@@ -15,7 +15,7 @@ export const contactData: ContactDataProps[] = [
       icon: FaHouse,
   },
   {
-      title: "+63-935-609-5278",
+      title: "+63-963-818-8920",
       description: "Mon - Sun",
       icon: FaPhone,
   },
