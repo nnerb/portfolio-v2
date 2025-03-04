@@ -21,7 +21,7 @@ import { Link } from "react-scroll";
               key={index} 
               className={cn(
                 "relative text-xs cursor-pointer rounded-lg p-4 w-full font-semibold text-center",
-                currentActiveSection === formattedName && "bg-blue-200 dark:bg-blue-400"
+                currentActiveSection === formattedName && "bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300"
               )}
             >
               <Link
