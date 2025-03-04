@@ -62,7 +62,7 @@ const Home = () => {
               <Typewriter
                 words={
                   [
-                    "Learning & Growing as a Developer.",
+                    "Always Learning",
                     "Frontend Enthusiast",
                     "Passionate Problem-Solver",
                     "Code. Debug. Repeat."
