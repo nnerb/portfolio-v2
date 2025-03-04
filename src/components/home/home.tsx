@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { Button } from "../ui/button";
 import { containerVariants, itemVariants } from "./animations";
 import Particle from "@/particles";
+import { Typewriter } from "react-simple-typewriter"
 
 const Home = () => {
 
@@ -51,12 +52,30 @@ const Home = () => {
           <h3 
             className="
               font-gothic-bold 
-              dark:text-slate-400 
+              bg-gradient-to-tl from-blue-400 via-blue-600 to-blue-800
+              text-transparent bg-clip-text 
               leading-[1.2] 
               text-[clamp(30px,8vw,70px)] 
               m-0"
             >
-            Let's design your success.
+            <span>
+              <Typewriter
+                words={
+                  [
+                    "Learning & Growing as a Developer.",
+                    "Frontend Enthusiast",
+                    "Passionate Problem-Solver",
+                    "Code. Debug. Repeat."
+                  ]
+                } 
+                loop={Infinity}
+                cursor
+                cursorStyle="|"
+                typeSpeed={100}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
           </h3>
         </motion.div>
         <motion.div variants={itemVariants} className="mt-4">
