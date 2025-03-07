@@ -71,6 +71,7 @@ const Home = () => {
                 loop={Infinity}
                 cursor
                 cursorStyle="|"
+                cursorColor="#3b82f6"
                 typeSpeed={100}
                 deleteSpeed={50}
                 delaySpeed={1000}
