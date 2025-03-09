@@ -48,8 +48,8 @@ const ExperienceGrid = () => {
                 <Card 
                   className="
                     bg-slate-100 dark:bg-slate-900 hover:shadow-slate-300
-                    hover:dark:shadow-sky-900 hover:shadow-[0px_0px_15px] h-full w-full
-                    p-4 sm:p-6 transition
+                    hover:dark:shadow-blue-900 hover:shadow-[0px_0px_15px] h-full w-full
+                    p-4 sm:p-6 transition group
                   "
                 >
                   <Accordion type="multiple" defaultValue={[experiences[0].company]}>               
@@ -57,7 +57,9 @@ const ExperienceGrid = () => {
                       <AccordionTrigger className="w-full">
                         <CardHeader className="flex-row gap-4 w-full">
                           <div className="flex flex-col items-start">
-                            <CardTitle className="text-lg text-start">{exp.title}</CardTitle>
+                            <CardTitle className="text-lg text-start group-hover:text-blue-500 transition">
+                              {exp.title}
+                            </CardTitle>
                             <div className="text-xs text-gray-500 flex flex-col items-start w-full">
                               <a 
                                 className="hover:underline cursor-pointer text-start"

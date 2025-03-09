@@ -30,7 +30,7 @@ const SkillsGrid = () => {
               layout
               className="flex flex-col items-center rounded-md bg-slate-100 dark:bg-slate-900 border 
                 border-slate-300 dark:border-slate-800 w-full h-full py-2 group hover:shadow-slate-500
-                 dark:hover:shadow-blue-500
+                 dark:hover:shadow-blue-900
                  hover:shadow-[0px_4px_15px] transition-shadow"
               initial={hasLoaded ? { scale: 0} : false}
               animate={{ scale: 1 }}

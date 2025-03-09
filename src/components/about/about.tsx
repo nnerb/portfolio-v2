@@ -1,3 +1,4 @@
+import CustomEvenSection from "../custom-even-section";
 import LeftHeader from "../left-header";
 import AboutDetails from "./components/about-details";
 import AboutImage from "./components/about-image";
@@ -6,10 +7,10 @@ import Ways from "./components/ways";
 
 const About = () => {
   return (  
-    <section className="relative bg-slate-50 dark:bg-slate-950">
-      <div className="flex flex-col align-center justify-center max-w-[900px] mx-auto py-[100px] px-4">
+    <CustomEvenSection id="section" customClass="pb-0">
+      <div className="flex flex-col align-center justify-center max-w-[900px] mx-auto ">
         <LeftHeader title="About Me"/>
-        <div className="pt-8 relative flex justify-center items-center flex-col gap-[7rem]">
+        <div className="pt-8 pb-16 relative flex justify-center items-center flex-col gap-20">
           <div className="grid md:grid-cols-[2fr,1fr] gap-[50px] relative">
             <AboutDetails />
             <AboutImage />
@@ -18,7 +19,7 @@ const About = () => {
         </div>
       </div>
       <Mission />
-    </section>
+    </CustomEvenSection>
    );
 }
  
