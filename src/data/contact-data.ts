@@ -10,8 +10,8 @@ interface ContactDataProps {
 
 export const contactData: ContactDataProps[] = [
   {
-      title: "Las Piñas City, Metro Manila",
-      description: "1236 Balite St. Ilaya",
+      title: "Philippines",
+      description: "Metro Manila",
       icon: FaHouse,
   },
   {
