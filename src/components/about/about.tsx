@@ -7,9 +7,9 @@ import Ways from "./components/ways";
 
 const About = () => {
   return (  
-    <CustomEvenSection id="section" customClass="pb-0">
+    <CustomEvenSection id="section" aria-labelledby="about-title" customClass="pb-0">
       <div className="flex flex-col align-center justify-center max-w-[900px] mx-auto ">
-        <LeftHeader title="About Me"/>
+        <LeftHeader title="About Me" />
         <div className="pt-8 pb-16 relative flex justify-center items-center flex-col gap-20">
           <div className="grid md:grid-cols-[2fr,1fr] gap-[50px] relative">
             <AboutDetails />
