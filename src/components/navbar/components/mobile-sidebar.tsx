@@ -15,8 +15,8 @@ const MobileSidebar = () => {
         </SheetTrigger>
         <SheetContent side="right" className="p-8 bg-slate-100 dark:bg-slate-950 ">
           <SheetHeader>
-          <SheetTitle hidden></SheetTitle>
-          <SheetDescription hidden></SheetDescription>
+            <SheetTitle className="sr-only"></SheetTitle>
+            <SheetDescription className="sr-only"></SheetDescription>
           </SheetHeader>
           <div className="flex flex-col gap-10">
             <div className="w-full">
