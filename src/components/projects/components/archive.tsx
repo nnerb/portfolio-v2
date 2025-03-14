@@ -7,6 +7,7 @@ import ArchiveTable from "./archive-table";
 const Archive = () => {
 
   const [search, setSearch] = useState("");
+  const trimmedSearch = search.trim().toLowerCase()
   const navigate = useNavigate()
 
   return (
@@ -46,7 +47,7 @@ const Archive = () => {
         />
       </div>
       {/* Project List */}
-      <ArchiveTable search={search}/>
+      <ArchiveTable search={trimmedSearch}/>
     </section>
   );
 };

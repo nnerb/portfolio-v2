@@ -9,13 +9,11 @@ const ArchiveTable = ({ search } : { search: string }) => {
     const techStack = project.techStack.map((tech) => tech.toLowerCase())
   
     return (
-      name.toLowerCase().includes(search.toLowerCase()) ||
-      year.includes(search.toLowerCase()) ||
-      techStack.includes(search.toLowerCase())
+      name.toLowerCase().includes(search) ||
+      year.includes(search) ||
+      techStack.some((tech) => tech.includes(search))
     )
-  }
-    
-  );
+  });
 
   return ( 
     <div className="mt-6">
