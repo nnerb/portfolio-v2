@@ -14,7 +14,7 @@ const WaysGrid = () => {
     >
       {waysData.map((data, index) => (
         <motion.div 
-          key={index}
+          key={data.id}
           className={`
             flex flex-col group max-w-[400px] md:max-w-[300px]
             ${index === waysData.length - 1 && 'md:col-span-2 md:mx-auto lg:col-auto lg:mx-0'}
@@ -28,19 +28,18 @@ const WaysGrid = () => {
             hover:dark:shadow-blue-900 hover:shadow-[0px_0px_10px] p-4
              rounded-lg h-full flex flex-col items-center"
           >
-            <span className="text-[3rem] group-hover:text-blue-500 transition">    
+            <span className="text-[3rem] group-hover:text-blue-500 transition"aria-hidden="true">    
               {<data.icon />}
             </span>
-            <div className="relative">
-              <h1 className="
-                font-gothic-bold text-base pt-3 text-center font-[600] 
-                group-hover:text-blue-500 transition"
-              >
-                {data.title}
-              </h1>
-            </div>
-            
-            <p className="text-center pt-5 text-sm text-slate-700 dark:text-slate-400">{data.caption}</p>
+            {/* Title with proper heading structure */}
+            <h2 className="font-gothic-bold text-base pt-3 text-center font-semibold group-hover:text-blue-500 transition">
+              {data.title}
+            </h2>
+
+            {/* Description text */}
+            <p className="text-center pt-5 text-sm text-slate-700 dark:text-slate-400">
+              {data.caption}
+            </p>
           </Card>
         </motion.div>
       ))}

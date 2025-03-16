@@ -58,7 +58,7 @@ const Home = () => {
                 text-[clamp(30px,8vw,70px)] 
                 m-0"
               >
-              <span>
+              <strong>
                 <Typewriter
                   words={
                     [
@@ -76,13 +76,13 @@ const Home = () => {
                   deleteSpeed={50}
                   delaySpeed={1000}
                 />
-              </span>
+              </strong>
             </h3>
           </motion.div>
           <motion.div variants={itemVariants} className="mt-4">
             <p className="">
-              A <span className="text-blue-500 font-semibold">Software Developer</span> specializing in <span className="text-blue-500 font-semibold">React.js</span> and 
-              <span className="text-blue-500 font-semibold"> Modern Web Development</span>.
+              A <strong className="text-blue-500">Software Developer</strong> specializing in <strong className="text-blue-500">React.js</strong> and 
+              <strong className="text-blue-500"> Modern Web Development</strong>.
             </p>
           </motion.div>
           <motion.div variants={itemVariants} className="mt-5">

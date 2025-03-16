@@ -4,25 +4,25 @@ const AboutDetails = () => {
   return ( 
     <div className="relative flex flex-col gap-4">
       <p className='mb-2'>
-        <span className='text-blue-500 font-bold'>Hello! </span>
+        <strong className='text-blue-500'>Hello! </strong>
           My name is 
-        <span className='text-blue-500 font-bold'> Brenn Aldwin A. Santiago</span>
+        <strong className='text-blue-500'> Brenn Aldwin A. Santiago</strong>
         . I specialize in
-        <span className='text-blue-500 font-bold'> building refined digital web experiences </span>
+        <strong className='text-blue-500'> building refined digital web experiences </strong>
           with a
-        <span className='text-blue-500 font-bold'> focus </span> 
+        <strong className='text-blue-500'> focus </strong> 
         on 
-        <span className='text-blue-500 font-bold'> responsive </span>
+        <strong className='text-blue-500'> responsive </strong>
         and 
-        <span className='text-blue-500 font-bold'> interactive content. </span>
+        <strong className='text-blue-500'> interactive content. </strong>
       </p>
       <p className="mb-2 dark:text-slate-200">
         I hold a
-        <span className='text-blue-500 font-bold'> bachelor's degree in Computer Science </span> 
+        <strong className='text-blue-500'> bachelor's degree in Computer Science </strong> 
         in
-        <span className='text-blue-500 font-bold'> Cavite State University </span> 
+        <strong className='text-blue-500'> Cavite State University </strong> 
         and am currently seeking opportunities to 
-        <span className='text-blue-500 font-bold'> advance my career in Web Development</span> 
+        <strong className='text-blue-500'> advance my career in Web Development</strong> 
         .
       </p>
       <MoreInfo />

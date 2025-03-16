@@ -40,8 +40,8 @@ const MoreInfo = () => {
 
     
   const infoItems = aboutData.map((item, index) => (
-    <motion.li key={index} variants={li} className="font-black list-disc marker:text-blue-500">
-      {item.title}
+    <motion.li key={index} variants={li} className="list-disc marker:text-blue-500">
+      <strong>{item.title}</strong>
     </motion.li>
   ))
 

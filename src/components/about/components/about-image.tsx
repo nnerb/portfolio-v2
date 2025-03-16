@@ -18,8 +18,10 @@ const AboutImage = () => {
           <img 
             className="rounded" 
             loading="lazy" 
+            decoding="async" 
             src={profile} 
-            alt="Brenn Aldwin Santiago smiling on a stolen picture"
+            alt="Brenn Aldwin Santiago smiling at the camera"
+            role="img"
           />
         </div>
       </div>
