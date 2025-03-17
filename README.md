@@ -23,7 +23,6 @@ Welcome to my portfolio! This is the second iteration of my personal website, bu
 - **Skills** – Technologies and tools I use
 - **Projects** – Featured projects + archive
 - **Contact** – Ways to reach me
-- **Footer** – "Developed by Brenn Aldwin Santiago © 2025 All rights reserved."
 
 ## 🎨 Screenshots
 Here’s a preview of the portfolio:
