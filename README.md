@@ -1,4 +1,4 @@
-# Portfolio v2
+![image](https://github.com/user-attachments/assets/72669679-06e8-43b7-bbae-d2be91a103ff)# Portfolio v2
 
 Welcome to my portfolio! This is the second iteration of my personal website, built with modern web technologies to showcase my work, skills, and experience.
 
@@ -26,6 +26,16 @@ Welcome to my portfolio! This is the second iteration of my personal website, bu
 - **Footer** – "Developed by Brenn Aldwin Santiago © 2025 All rights reserved."
 
 ## 🎨 Screenshots
+![image](https://github.com/user-attachments/assets/4f80fc8e-46ed-4836-b65b-0c62194f2c46)
+![image](https://github.com/user-attachments/assets/da4f2e3f-d9ee-4924-b92f-1e65520d86ff)
+![image](https://github.com/user-attachments/assets/65dfa10b-426e-4e44-89bc-90bcff1fe138)
+![image](https://github.com/user-attachments/assets/2e99c328-afb0-42bd-8fbf-fe2b91faba01)
+![image](https://github.com/user-attachments/assets/96062e2b-1a51-43ce-8253-7ee0c6647a56)
+
+
+
+
+
 
 Here’s a preview of the portfolio:
 
