@@ -25,7 +25,7 @@ const ExperienceGrid = () => {
           return (
             <motion.div
               variants={variants}
-              key={index}
+              key={exp.company}
               className={`
                 relative flex items-start gap-4 sm:gap-10 h-full w-full pl-16 
                 sm:pl-0 flex-row ${isLeft ? "sm:flex-row" : "sm:flex-row-reverse" }
@@ -78,8 +78,8 @@ const ExperienceGrid = () => {
                           {exp.description}
                         </CardContent>
                         <div className="flex flex-wrap gap-[6px]">
-                          {exp.skills.map((skill, index) => (
-                            <Badge variant="custom" key={index}>
+                          {exp.skills.map((skill) => (
+                            <Badge variant="custom" key={skill}>
                               {skill}
                             </Badge>
                           ))}
