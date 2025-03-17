@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/72669679-06e8-43b7-bbae-d2be91a103ff)# Portfolio v2
+# Portfolio v2
 
 Welcome to my portfolio! This is the second iteration of my personal website, built with modern web technologies to showcase my work, skills, and experience.
 
