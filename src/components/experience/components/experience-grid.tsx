@@ -56,9 +56,24 @@ const ExperienceGrid = () => {
                     <AccordionItem value={exp.company} className="cursor-default flex flex-col gap-4">
                       <AccordionTrigger className="w-full">
                         <CardHeader className="flex-row gap-4 w-full">
-                          <div className="flex flex-col items-start">
+                          <div className="flex flex-col gap-2 items-start">
                             <CardTitle className="text-lg text-start group-hover:text-blue-500 transition">
-                              {exp.title}
+                              <div className="leading-6">
+                                <p>{exp.title}
+                                {exp.clientLogo && 
+                                  (
+                                    <div className="inline-flex">
+                                      <div className="ml-1">
+                                        <img 
+                                          src={exp.clientLogo} 
+                                          className="inline-block h-5 w-5 rounded-full" 
+                                        />)
+                                      </div>
+                                    </div>
+                                  )
+                                }
+                                </p>
+                              </div>
                             </CardTitle>
                             <div className="text-xs text-gray-500 flex flex-col items-start w-full">
                               <a 

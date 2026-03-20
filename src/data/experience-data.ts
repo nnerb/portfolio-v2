@@ -1,9 +1,12 @@
 import melham from "/images/company/melham.jpg"
 import xircus from "/images/company/xircus.jpg"
+import blackfort from "/images/company/blackfort.png"
+import cebpac from "/images/company/cebpac.jpg"
 
 interface ExperiencesProps {
   title: string;
   company: string;
+  clientLogo?: string;
   date: string;
   image: string;
   description: string;
@@ -13,6 +16,24 @@ interface ExperiencesProps {
 
 
 export const experiences: ExperiencesProps[] = [
+  {
+    title: "Backend Developer → Production Support Engineer (Client: Cebu Pacific Air",
+    company: "Blackfort Consulting Inc.",
+    clientLogo: cebpac,
+    date: "Apr 2025 - Present",
+    image: blackfort,
+    description: `
+     Started as a Backend Developer, building APIs and microservices for Cebu Pacific’s flight booking system, 
+     focusing on flight availability, trip booking, and guest management. 
+     Currently serving as a Production Support Engineer, managing multiple enterprise systems 
+     including payments and cargo/passenger services, leading initiatives to automate manual processes, 
+     handle deployments, troubleshoot incidents, and ensure smooth, reliable operations.`,
+    skills: [
+      'Node/Express.js', 'Apigee', 'Git', 'Azure DevOps', 'Automation', 
+      'GraphQL', '.NET', 'Troubleshooting', 'Monitoring', 'Deployments'
+    ],
+    url: "https://blackfort.ph"
+  },
   {
     title: "Junior Software Developer",
     company: "Xircus Web3 Protocol",

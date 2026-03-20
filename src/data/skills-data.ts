@@ -20,8 +20,10 @@ export const skillsData: SkillsDataProps[] = [
   { logo: "images/skills/express.png", name: "Express.js", category: "BACKEND" },
   { logo: "images/skills/node.png", name: "Node.js", category: "BACKEND" },
   { logo: "images/skills/mongodb.png", name: "MongoDB", category: "BACKEND" },
+  { logo: "images/skills/apigee.svg", name: "Apigee", category: "BACKEND" },
+  { logo: "images/skills/azure.png", name: "Azure DevOps", category: "OTHER" },
   { logo: "images/skills/prisma.png", name: "Prisma", category: "BACKEND" },
   { logo: "images/skills/php.png", name: "PHP", category: "BACKEND" },
   { logo: "images/skills/mysql.png", name: "MySQL", category: "BACKEND" },
-  { logo: "images/skills/mariadb.png", name: "MariaDB", category: "BACKEND" }
+  { logo: "images/skills/mariadb.png", name: "MariaDB", category: "BACKEND" },
 ]
