@@ -59,20 +59,20 @@ const ExperienceGrid = () => {
                           <div className="flex flex-col gap-2 items-start">
                             <CardTitle className="text-lg text-start group-hover:text-blue-500 transition">
                               <div className="leading-6">
-                                <p>{exp.title}
-                                {exp.clientLogo && 
+                                <p className={`text-md`}>{exp.title}</p>
+                                 {exp.clientLogo && 
                                   (
-                                    <div className="inline-flex">
+                                    <div className="inline-flex text-sm">
+                                      <p>Client: {exp.client}</p>
                                       <div className="ml-1">
                                         <img 
                                           src={exp.clientLogo} 
-                                          className="inline-block h-5 w-5 rounded-full" 
-                                        />)
+                                          className="inline-block h-4 w-4 rounded-full" 
+                                        />
                                       </div>
                                     </div>
                                   )
-                                }
-                                </p>
+                                  }
                               </div>
                             </CardTitle>
                             <div className="text-xs text-gray-500 flex flex-col items-start w-full">

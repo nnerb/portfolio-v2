@@ -6,6 +6,7 @@ import cebpac from "/images/company/cebpac.jpg"
 interface ExperiencesProps {
   title: string;
   company: string;
+  client?: string;
   clientLogo?: string;
   date: string;
   image: string;
@@ -17,17 +18,19 @@ interface ExperiencesProps {
 
 export const experiences: ExperiencesProps[] = [
   {
-    title: "Backend Developer → Site Reliability Engineer (Client: Cebu Pacific Air",
+    title: "Backend Developer",
+    client: "Cebu Pacific Air",
     company: "Blackfort Consulting Inc.",
     clientLogo: cebpac,
     date: "Apr 2025 - Present",
     image: blackfort,
     description: `
-     Started as a Backend Developer, building APIs and microservices for Cebu Pacific’s flight booking system, 
-     focusing on initial booking, manage booking, and CEB Super Pass module. 
-     Currently serving as an Site Reliability Engineer, managing multiple enterprise systems 
-     including payments and cargo/passenger services, leading initiatives to automate manual processes, 
-     handle deployments, troubleshoot incidents, and ensure smooth, reliable operations.`,
+     At Cebu Pacific, we handle flight booking services for millions of passengers, 
+     from initial search to manage booking and Super Pass subscriptions. 
+     I developed and maintained backend APIs using Node.js and Express.js, integrating Navitaire's 
+     GraphQL and REST endpoints with Apigee management. I led an automation initiative that reduced manual validation effort by 95%, and supported bank 
+     payment integrations with SAP. I also conducted code reviews, resolved production issues, and 
+     ensured financial data reliability for transaction processing.`,
     skills: [
       'Node/Express.js', 'Apigee', 'Git', 'Azure DevOps', 'Automation', 
       'GraphQL', '.NET', 'Troubleshooting', 'Monitoring', 'Deployments'
