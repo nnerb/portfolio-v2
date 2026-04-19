@@ -17,15 +17,15 @@ interface ExperiencesProps {
 
 export const experiences: ExperiencesProps[] = [
   {
-    title: "Backend Developer → Production Support Engineer (Client: Cebu Pacific Air",
+    title: "Backend Developer → Site Reliability Engineer (Client: Cebu Pacific Air",
     company: "Blackfort Consulting Inc.",
     clientLogo: cebpac,
     date: "Apr 2025 - Present",
     image: blackfort,
     description: `
      Started as a Backend Developer, building APIs and microservices for Cebu Pacific’s flight booking system, 
-     focusing on flight availability, trip booking, and guest management. 
-     Currently serving as a Production Support Engineer, managing multiple enterprise systems 
+     focusing on initial booking, manage booking, and CEB Super Pass module. 
+     Currently serving as an Site Reliability Engineer, managing multiple enterprise systems 
      including payments and cargo/passenger services, leading initiatives to automate manual processes, 
      handle deployments, troubleshoot incidents, and ensure smooth, reliable operations.`,
     skills: [
